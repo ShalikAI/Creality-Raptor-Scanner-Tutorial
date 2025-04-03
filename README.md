@@ -79,17 +79,17 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
 # Process your exported model in blender
 
-1. Bring your model into blender
+**1.** Bring your model into blender
 * When you open blender, this is what you will see:
 
-![image](https://github.com/user-attachments/assets/6dd0a23a-dff2-4a19-8e3f-966a31c4f1e9)
+  ![image](https://github.com/user-attachments/assets/6dd0a23a-dff2-4a19-8e3f-966a31c4f1e9)
 
 * Click on the cube and press the delete key.
 * Go to File > Import > Wavefront (.obj)
 * Select the folder containing the scan of your object from creality.
 * Select the .obj file inside the folder. Press "Import Wavefront OBJ"
 
-2. Arrange and size your model in the xyz space
+**2.** Arrange and size your model in the xyz space
 * Because the model will be used in other programs, it needs to be aligned correctly in 3D space. We want the object to be centered at the origin and be positioned "straight" with respect to the x, y, and z axes. Also, when you scan the object in creality, it scales the model up by a large amount. So, the computer thinks the object is much larger than it is in real life. We have to scale the object down to fix this.
 * Use the scroll wheel on your mouse to zoom out and find the object you imported.
 * First, rescale the object; you should see a panel like the one shown below toward the bottom left of your screen.
@@ -119,15 +119,15 @@ The purpose of scanning an object is to create a point cloud in the software to 
 * Once you have adjusted the scale, position, and rotation of your object click on the object and press CTRL+A.
 * Click "All Transforms"
 
-4. Export your blender model
+**3.** Export your blender model
 * Go to File > Export > Wavefront (.obj)
 * Navigate to the folder where your original object was stored
 * Add _modified to the end of the file name and press Export as .obj
 
-5. Ensure file size is < 10 MB
+**4.** Ensure file size is < 10 MB
 * Open file explorer and go to the folder where you exported your model
-* Look at the file size of your modified .obj is it less than 10 MB (or 10,000 kB ?)
-* If yes, skip the next step
+* Look at the file size of your modified .obj, is it less than 10 MB (or 10,000 kB ?)
+* If yes, skip to step 6.
 * If it is greater than 10,000 kB, go back into blender and look at your object. In the panel where you resized the object, click the wrench icon. Click add modifier.
   
   ![image](https://github.com/user-attachments/assets/ade7f81a-3d0d-49e7-a4d4-e87450d97057)
@@ -136,8 +136,22 @@ The purpose of scanning an object is to create a point cloud in the software to 
 * Change the ratio to make the file size under 10 MB. For example, if your file is 100 MB, you will change the ratio to 0.1.
 * Export the file again, overwrite your previous "_modified" .obj file.
 
-6. Re-assign texture map to .obj file
-*
+**5.** Re-assign texture map to .obj file
+* A 3D model should be in a folder containing 3 files of the same name: a .obj file, a .png file, and a .mtl file. The .obj file is your 3D model. The .png file is your texture map. The .mtl file links the texture map to the 3D object. When we modified the object in blender, it still is set to use the texture map of the unmodified object. So, we are going to copy the texture map and change the .mtl file to tell it to use the copy. This way we can have 3 files for one object all with the same name, for organization purposes.
+* Open file explorer and go to the folder that contains your model
+* Click on the .png file and press CTRL+C
+* While in the same folder, press CTRL+V
+* Rename the copied .png file to have the same name as your modified object
+* Open the .mtl file in notepad, it will look like this:
+ 
+  ![image](https://github.com/user-attachments/assets/eb623c25-ad15-48ad-98c0-86490872acff)
+
+* While being careful not to change anything else, change the circled part to the name of your new texture map
+* Press CTRL+S to save your changes
+
+That's it! You have successfully scanned an object and processed it in blender. If the texture map of your object needs to be edited, you can do so by following the next section of the tutorial. If you'd like to make sure your texture map is correct, you can press this button while viewing your object in blender to show it with the texture map.
+
+  ![image](https://github.com/user-attachments/assets/a35da7b5-ef22-4667-b05b-504a8cd4e5fd)
 
 # Edit the texture map in Krita
-* will add more info here when I can see the software in lab
+* Coming soon
