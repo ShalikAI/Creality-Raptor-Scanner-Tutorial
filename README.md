@@ -44,19 +44,38 @@ The purpose of scanning an object is to create a point cloud in the software to 
 # Processing your scan in creality
 1. Edit the point cloud of your scans.
 
-   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually be deleting the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
+   Now that you have finished scanning, you should be on the process tab. You will see something like this:
 
-2. Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
+    ![05](https://github.com/user-attachments/assets/56d60de2-6ff6-421b-bbaf-52e2560f2bda)
 
-3. If you have multiple scans, you will need to merge them together. Hit the button below the magic wand (looks like two puzzle pieces connecting) to open the merge menu. Here, you can either merge automatically or manually. Sometimes automatic merging works very well, but if it doesn't, go to manual merge. Choose one point cloud for the fixed window and another for the floating window. (will add more details about how to manually merge here later. need to see the software.)
+    For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
 
-4. Once you have a single point cloud that represents your object, hit the mesh button (under the merge button.) This converts your point cloud to a mesh. A mesh is a collection of vertices, edges, and faces to define the shape of an object. This is the usual form of 3D objects on a computer. Usually, checking the option to close holes is ok but the "closure" option may cause issues. This option will ensure that the entire mesh is "sealed." It is usually too aggressive and will incorrectly combine areas of the object.
+3. Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
 
-5. Now that you have a mesh, apply its color map by hitting the paint pallete button (under the mesh button.)
+   ![06](https://github.com/user-attachments/assets/26a20d16-ac08-487e-a5db-953b33423f21)
 
-6. Export your finished scan to be processed in other software.
 
-   Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (say, for removing markers) this can be done in any software that allows for image editing but Krita is the most convenient.
+5. If you have multiple scans, you will need to merge them together. Hit the button below the magic wand (looks like two puzzle pieces connecting) to open the merge menu. Here, you can either merge automatically or manually.
+
+   ![07](https://github.com/user-attachments/assets/f55a6469-a243-4b1e-b46c-bf772463a50b)
+
+   Automatic merging is show below. To merge, select your scans on the left and then press start. Sometimes, it works very well. But if it doesn't, you have to switch to manual merging.
+   ![08](https://github.com/user-attachments/assets/d1d3853f-6741-4bd8-98d1-6269da31b6c1)
+
+   Manual merging is shown below. Select one scan for the fixed window and one scan for the float window. Select points on your scan that are the same on both by pressing shift + left click. To deselect a point press ctrl + left click. Once you have at least 3 (though you will usually need more) press start to merge.
+   ![manual_merge](https://github.com/user-attachments/assets/54a58aae-4d74-4726-800f-9985cf21ef48)
+
+7. Once you have a single point cloud that represents your object, hit the mesh button (under the merge button.) This converts your point cloud to a mesh. A mesh is a collection of vertices, edges, and faces to define the shape of an object. This is the usual form of 3D objects on a computer. Usually, checking the option to close holes is ok but the "closure" option may cause issues. Closure will ensure that the entire mesh is "sealed." It is usually too aggressive and will incorrectly combine areas of the object.
+
+   ![09](https://github.com/user-attachments/assets/b93be5d2-dcf0-49fa-8dec-3e2ef44d38ca)
+
+8. Now that you have a mesh, apply its color map by hitting the paint pallete button (under the mesh button.)
+
+9. Export your finished scan to be processed in other software.
+
+   ![11](https://github.com/user-attachments/assets/0e1ae032-c2d8-4faa-9b28-83dce273915b)
+
+   Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (usually for removing markers) this can be done in any software that allows for image editing, but this tutorial will use Krita because it is convenient.
 
 # Process your exported model in blender
 * will add more info here when I can see the software in lab
