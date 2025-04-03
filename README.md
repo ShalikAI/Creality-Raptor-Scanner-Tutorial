@@ -78,7 +78,16 @@ The purpose of scanning an object is to create a point cloud in the software to 
    Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (usually for removing markers) this can be done in any software that allows for image editing, but this tutorial will use Krita because it is convenient.
 
 # Process your exported model in blender
-* will add more info here when I can see the software in lab
 
+1. Bring your model into blender
+* When you open blender, this is what you will see:
+
+![image](https://github.com/user-attachments/assets/6dd0a23a-dff2-4a19-8e3f-966a31c4f1e9)
+
+* Click on the cube and press the delete key.
+* Go to File > Import > Wavefront (.obj)
+* Select the folder containing the scan of your object from creality.
+* Select the .obj file inside the folder. Press "Import Wavefront OBJ"
+* 
 # Edit the texture map in Krita
 * will add more info here when I can see the software in lab
