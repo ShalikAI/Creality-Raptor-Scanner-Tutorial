@@ -28,7 +28,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 # Processing your scan in creality
 1. Edit the point cloud of your scans.
 
-   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Usually, you will be deleting the table from under the object. Rotate your object by left clicking and dragging the mouse. Move your object by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
+   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually be deleting the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
 
 2. Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
 
