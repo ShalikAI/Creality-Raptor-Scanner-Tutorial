@@ -4,15 +4,24 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 # Information About the Scanner
 * The scanner we use is the Creality Raptor.
 * There are 2 scanning modes: blue laser mode (which uses blue lasers to scan) and infra-red mode (uses infrared camera to scan.) Blue filter mode works with markers and infra-red filter mode works without markers.
-* There are 2 connection configurations: WiFi or wired. In the WiFi configuration, you connect the scanner to the WiFi handle. The handle will create a closed network for sending data to the creality software as well as power the scanner. For the wired configuration, you connect the scanner to power and use a long USB cable to connect to the computer.
-* There is a way to use your phone on top of the scanner so that you can better see what the computer sees when you scan. To do this, just scan the QR code and connect to the wifi (will add more info here when I can take screenshots in lab)
+* There are 2 connection configurations: WiFi or wired. They can be seen below. In the WiFi configuration, you connect the scanner to the WiFi handle. The handle will create a closed network for sending data to the creality software as well as power the scanner. For the wired configuration, you connect the scanner to power and use a long USB cable to connect to the computer. ![modes](https://github.com/user-attachments/assets/ec1a4d6c-0b4d-4b07-aad4-e020d38a8b5d)
+
+
+* When the WiFi handle mode is used, you can place a phone on top of the scanner so that you can better see what the computer sees when you scan. To do this, while on the scanning screen press the button shown below circled in red and follow the instructions. ![phone_scan_mode](https://github.com/user-attachments/assets/c470e7af-465d-40c2-9d85-082467e34e8d)
+
+
+
 * You can calibrate the scanner while it is connected in the USB wired configuration.
-* The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram seen in the software. When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment.
+* The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram shown during scanning (see picture below.) When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment. ![histogram_flat](https://github.com/user-attachments/assets/0decc243-28f3-4986-92c9-0810220236ed)
+
 
 # Scan an object
-The purpose of scanning an object is to create a point cloud in the software to be processed. A point cloud is a large collection of XYZ coordinates that represents an object.
-1. Connect the scanner to the creality software either through WiFi or the USB wire.
-2. Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, "metal_cube", "basketball", "table_red".
+The purpose of scanning an object is to create a point cloud in the software to be processed. A point cloud is a large collection of XYZ coordinates that represents an object. After you open the creality software, scanning an object is the first step to a fully processed 3D model.
+1. Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
+![01](https://github.com/user-attachments/assets/2a0ad620-b635-44f7-80a8-ec4a18256bc3) At the top, you can see there are multiple tabs- device, home, scan, process, and edit. The device tab is where you just were when you were connecting the scanner. The home tab is where you are now, here you can open past projects, calibrate the scanner, and create new projects. The scan tab is where you will be during the process of scanning. The process tab is where you will process your scan into a point cloud, then a mesh, then add a texture map, and then export the model as a .obj. We will not use the edit tab, but it is used for editing the mesh.
+
+2. Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, "metal_cube", "basketball", "table_red". ![02](https://github.com/user-attachments/assets/1154d03d-c3e7-4ddd-bcff-a4cf70eefcf5)
+
 3. Choose Blue Laser Mode. The default settings are all ok except color mapping, make sure that is checked "Yes". (Make sure all of your scans get the color map, because the software will not merge scans without a color map to ones that do.)
 4. Press the "Scan" button at the bottom to start.
 
@@ -23,7 +32,14 @@ The purpose of scanning an object is to create a point cloud in the software to 
 * You can pause or resume the scan at any time by pressing the pause/play button in the software, on your phone, on the scanner, or on the wifi handle.
 * In the software the green areas are where the scanner was able to get a lot of information, the red areas are where it has not enough information about the object. You want as much green as possible.
 
-5. When you have scanned the areas needed and you have a nice green representation of it in the software, press the red ◼ button to end the scan. If you would like to take another scan, hit the + button near the top left of the screen. If that was the last scan needed, you now have to process your scan(s) in the creality software.
+5. When you have scanned the areas needed and you have a nice green representation of it in the software, press the red ◼ button to end the scan.
+
+   If you would like to take another scan, hit the + button near the top left of the screen (shown below.)
+   
+    ![image](https://github.com/user-attachments/assets/16ae6941-edb4-4d2c-9d17-046d369ed91e)
+
+   If that was the last scan needed, you now have to process your scan(s) in the creality software.
+
 
 # Processing your scan in creality
 1. Edit the point cloud of your scans.
