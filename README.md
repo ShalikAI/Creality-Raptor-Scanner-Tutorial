@@ -176,12 +176,12 @@ the blur tool:
 
 ![image](https://github.com/user-attachments/assets/32d7c170-0898-4149-9a3b-881b4b0263ec) with this brush: ![image](https://github.com/user-attachments/assets/ca69ab0c-fede-4637-b19d-452401a7de4d)
 
-
 and the eyedropper tool:
 
 ![image](https://github.com/user-attachments/assets/9902c546-43f5-4845-9d51-2f7b3c39512c)
 
 **Erasing markers from texture maps**
+
 **1.** Use the eyedropper tool to pick the color you want to replace the marker with
 
 **2.** Use the pen tool to draw over the marker with the selected color
@@ -197,6 +197,5 @@ The method to fix this depends on the object. Usually, the best way to fix the m
 
 **3.** Blur the area to look natural with the areas next to it
 
-Sometimes, you can also use the filters in Krita to fix incorrect tones. You can filter an image in Krita by pressing
-
+Sometimes, you can also use the filters in Krita to fix incorrect tones. You can filter an image in Krita by pressing ![image](https://github.com/user-attachments/assets/c901f322-8575-4c6b-a6ec-4e16a0e4abfe) the following link provides documentation on how to use every filter from the official Krita manual.
 https://docs.krita.org/en/reference_manual/filters/adjust.html
