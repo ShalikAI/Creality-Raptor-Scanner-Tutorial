@@ -1,4 +1,4 @@
-# All-About-Creality-Raptor-Scanner
+# All About Creality Raptor Scanner
 This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 4 sections:
 
 1. Information About the Scanner
