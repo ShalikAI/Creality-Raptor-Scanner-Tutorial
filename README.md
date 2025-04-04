@@ -40,11 +40,11 @@ The purpose of scanning an object is to create a point cloud in the software to 
 **1.** Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
 ![01](https://github.com/user-attachments/assets/2a0ad620-b635-44f7-80a8-ec4a18256bc3) At the top, you can see there are multiple tabs- device, home, scan, process, and edit. The device tab is where you just were when you were connecting the scanner. The home tab is where you are now, here you can open past projects, calibrate the scanner, and create new projects. The scan tab is where you will be during the process of scanning. The process tab is where you will process your scan into a point cloud, then a mesh, then add a texture map, and then export the model as a .obj. We will not use the edit tab, but it is used for editing the mesh.
 
-**2.** Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, "metal_cube", "basketball", "table_red". ![02](https://github.com/user-attachments/assets/1154d03d-c3e7-4ddd-bcff-a4cf70eefcf5)
+**2.** Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, `metal_cube`, `basketball`, `table_red`. ![02](https://github.com/user-attachments/assets/1154d03d-c3e7-4ddd-bcff-a4cf70eefcf5)
 
 **3.** Choose Blue Laser Mode. The default settings are all ok except color mapping, make sure that is checked "Yes". (Make sure all of your scans get the color map, because the software will not merge scans without a color map to ones that do.)
 
-**4.** Press the "Scan" button at the bottom to start.
+**4.** Press the `Scan` button at the bottom to start.
 
 ### Scanning tips
 - Ensure that the object is in a stable position- if the object moves while you're scanning, you have to end the scan immediately and take a new one or else it will mess up the data.
@@ -55,7 +55,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
 **5.** When you have scanned the areas needed and you have a nice green representation of it in the software, press the red square button to end the scan.
 
-   If you would like to take another scan, hit the + button near the top left of the screen (shown below.)
+   If you would like to take another scan, hit the `+` button near the top left of the screen (shown below.)
    
    ![image](https://github.com/user-attachments/assets/16ae6941-edb4-4d2c-9d17-046d369ed91e)
 
