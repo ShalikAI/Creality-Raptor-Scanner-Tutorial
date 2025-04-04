@@ -5,7 +5,7 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 - [Scanning Process](#scanning-process)
    - [Scan an Object](#scan-an-object)
    - [Processing the Scan in Creality](#processing-the-scan-in-creality)
-- [Post-Processing](#post-procecssing)
+- [Post-Processing](#post-processing)
    - [Process the Exported Model in Blender](#process-the-exported-model-in-blender)
    - [Edit the Texture Map in Krita](#edit-the-texture-map-in-krita)
       -  [Erasing markers from texture maps](#erasing-markers-from-texture-maps)
