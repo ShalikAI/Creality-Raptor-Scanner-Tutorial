@@ -168,16 +168,13 @@ It has been partially edited, but as you can see the issue with this map is the 
 
 The tools needed to fix these texture maps are :
 
-the pen tool: 
-
+the pen tool:
 ![image](https://github.com/user-attachments/assets/d84afba4-56da-41c1-8dc4-6a7914c7187d) with this brush: ![image](https://github.com/user-attachments/assets/165bdd8f-e52e-4155-8551-62cd30d0e59f)
 
 the blur tool:
-
 ![image](https://github.com/user-attachments/assets/32d7c170-0898-4149-9a3b-881b4b0263ec) with this brush: ![image](https://github.com/user-attachments/assets/ca69ab0c-fede-4637-b19d-452401a7de4d)
 
 and the eyedropper tool:
-
 ![image](https://github.com/user-attachments/assets/9902c546-43f5-4845-9d51-2f7b3c39512c)
 
 **Erasing markers from texture maps**
@@ -189,6 +186,7 @@ and the eyedropper tool:
 **3.** Use the blend tool to blur the edges of the marker covers to make them look natural
 
 **Fixing "glitchy" tone patterns in texture maps**
+
 The method to fix this depends on the object. Usually, the best way to fix the map is:
 
 **1.** Use the eyedropper tool to pick the color you want the incorrect area to be
@@ -199,3 +197,6 @@ The method to fix this depends on the object. Usually, the best way to fix the m
 
 Sometimes, you can also use the filters in Krita to fix incorrect tones. You can filter an image in Krita by pressing ![image](https://github.com/user-attachments/assets/c901f322-8575-4c6b-a6ec-4e16a0e4abfe) the following link provides documentation on how to use every filter from the official Krita manual.
 https://docs.krita.org/en/reference_manual/filters/adjust.html
+
+Once you have edited the texture map to your liking, make sure you save it as a transparent .png with ![image](https://github.com/user-attachments/assets/598d3afa-0b31-4ebb-adae-02409abffa85) checked.
+
