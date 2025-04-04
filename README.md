@@ -17,13 +17,15 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 
 # Scan an object
 The purpose of scanning an object is to create a point cloud in the software to be processed. A point cloud is a large collection of XYZ coordinates that represents an object. After you open the creality software, scanning an object is the first step to a fully processed 3D model.
-1. Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
+
+**1.** Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
 ![01](https://github.com/user-attachments/assets/2a0ad620-b635-44f7-80a8-ec4a18256bc3) At the top, you can see there are multiple tabs- device, home, scan, process, and edit. The device tab is where you just were when you were connecting the scanner. The home tab is where you are now, here you can open past projects, calibrate the scanner, and create new projects. The scan tab is where you will be during the process of scanning. The process tab is where you will process your scan into a point cloud, then a mesh, then add a texture map, and then export the model as a .obj. We will not use the edit tab, but it is used for editing the mesh.
 
-2. Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, "metal_cube", "basketball", "table_red". ![02](https://github.com/user-attachments/assets/1154d03d-c3e7-4ddd-bcff-a4cf70eefcf5)
+**2.** Press "New Project" and name your scan. Follow the naming convention of all lowercase with underscores for spaces. For example, "metal_cube", "basketball", "table_red". ![02](https://github.com/user-attachments/assets/1154d03d-c3e7-4ddd-bcff-a4cf70eefcf5)
 
-3. Choose Blue Laser Mode. The default settings are all ok except color mapping, make sure that is checked "Yes". (Make sure all of your scans get the color map, because the software will not merge scans without a color map to ones that do.)
-4. Press the "Scan" button at the bottom to start.
+**3.** Choose Blue Laser Mode. The default settings are all ok except color mapping, make sure that is checked "Yes". (Make sure all of your scans get the color map, because the software will not merge scans without a color map to ones that do.)
+
+**4.** Press the "Scan" button at the bottom to start.
 
 ### Scanning tips
 * Ensure that the object is in a stable position- if the object moves while you're scanning, you have to end the scan immediately and take a new one or else it will mess up the data.
@@ -32,7 +34,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 * You can pause or resume the scan at any time by pressing the pause/play button in the software, on your phone, on the scanner, or on the wifi handle.
 * In the software the green areas are where the scanner was able to get a lot of information, the red areas are where it has not enough information about the object. You want as much green as possible.
 
-5. When you have scanned the areas needed and you have a nice green representation of it in the software, press the red ◼ button to end the scan.
+**5.** When you have scanned the areas needed and you have a nice green representation of it in the software, press the red square button to end the scan.
 
    If you would like to take another scan, hit the + button near the top left of the screen (shown below.)
    
@@ -42,7 +44,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
 
 # Processing your scan in creality
-1. Edit the point cloud of your scans.
+**1.** Edit the point cloud of your scans.
 
    Now that you have finished scanning, you should be on the process tab. You will see something like this:
 
@@ -50,12 +52,12 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
     For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
 
-3. Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
+**2.** Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
 
    ![06](https://github.com/user-attachments/assets/26a20d16-ac08-487e-a5db-953b33423f21)
 
 
-5. If you have multiple scans, you will need to merge them together. Hit the button below the magic wand (looks like two puzzle pieces connecting) to open the merge menu. Here, you can either merge automatically or manually.
+**3.** If you have multiple scans, you will need to merge them together. Hit the button below the magic wand (looks like two puzzle pieces connecting) to open the merge menu. Here, you can either merge automatically or manually.
 
    ![07](https://github.com/user-attachments/assets/f55a6469-a243-4b1e-b46c-bf772463a50b)
 
@@ -65,13 +67,13 @@ The purpose of scanning an object is to create a point cloud in the software to 
    Manual merging is shown below. Select one scan for the fixed window and one scan for the float window. Select points on your scan that are the same on both by pressing shift + left click. To deselect a point press ctrl + left click. Once you have at least 3 (though you will usually need more) press start to merge.
    ![manual_merge](https://github.com/user-attachments/assets/54a58aae-4d74-4726-800f-9985cf21ef48)
 
-7. Once you have a single point cloud that represents your object, hit the mesh button (under the merge button.) This converts your point cloud to a mesh. A mesh is a collection of vertices, edges, and faces to define the shape of an object. This is the usual form of 3D objects on a computer. Usually, checking the option to close holes is ok but the "closure" option may cause issues. Closure will ensure that the entire mesh is "sealed." It is usually too aggressive and will incorrectly combine areas of the object.
+**4.** Once you have a single point cloud that represents your object, hit the mesh button (under the merge button.) This converts your point cloud to a mesh. A mesh is a collection of vertices, edges, and faces to define the shape of an object. This is the usual form of 3D objects on a computer. Usually, checking the hole filling option is ok but the "closure" option may cause issues. Closure will ensure that the entire mesh is "sealed." It is usually too aggressive and will incorrectly combine areas of the object.
 
    ![09](https://github.com/user-attachments/assets/b93be5d2-dcf0-49fa-8dec-3e2ef44d38ca)
 
-8. Now that you have a mesh, apply its color map by hitting the paint pallete button (under the mesh button.)
+**5.** Now that you have a mesh, apply its color map by hitting the paint pallete button (under the mesh button.)
 
-9. Export your finished scan to be processed in other software.
+**6.** Export your finished scan to be processed in other software.
 
    ![11](https://github.com/user-attachments/assets/0e1ae032-c2d8-4faa-9b28-83dce273915b)
 
