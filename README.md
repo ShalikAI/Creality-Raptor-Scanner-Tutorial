@@ -1,5 +1,13 @@
 # All-About-Creality-Raptor-Scanner
-This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software.
+This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 4 sections:
+
+1. Information About the Scanner
+
+2. Scan an Object
+
+3. Process the Exported Model in Blender
+
+4. Edit the Texture Map in Krita
 
 # Information About the Scanner
 * The scanner we use is the Creality Raptor.
@@ -15,7 +23,7 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 * The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram shown during scanning (see picture below.) When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment. ![histogram_flat](https://github.com/user-attachments/assets/0decc243-28f3-4986-92c9-0810220236ed)
 
 
-# Scan an object
+# Scan an Object
 The purpose of scanning an object is to create a point cloud in the software to be processed. A point cloud is a large collection of XYZ coordinates that represents an object. After you open the creality software, scanning an object is the first step to a fully processed 3D model.
 
 **1.** Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
@@ -50,7 +58,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
     ![05](https://github.com/user-attachments/assets/56d60de2-6ff6-421b-bbaf-52e2560f2bda)
 
-    For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
+   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
 
 **2.** Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
 
@@ -79,7 +87,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (usually for removing markers) this can be done in any software that allows for image editing, but this tutorial will use Krita because it is convenient.
 
-# Process your exported model in blender
+# Process the Exported Model in Blender
 
 **1.** Bring your model into blender
 * When you open blender, this is what you will see:
@@ -155,7 +163,7 @@ That's it! You have successfully scanned an object and processed it in blender. 
 
   ![image](https://github.com/user-attachments/assets/a35da7b5-ef22-4667-b05b-504a8cd4e5fd)
 
-# Edit the texture map in Krita
+# Edit the Texture Map in Krita
 To edit the texture map of a 3D object, you can you use any software that can draw on a .png file. Because it is free and simple I will be using Krita for this tutorial. Below is a piece of a texture map for a traffic barrier:
 
 ![image](https://github.com/user-attachments/assets/9d7a2b7a-ba62-4bb5-adcb-fb385b133f99)
