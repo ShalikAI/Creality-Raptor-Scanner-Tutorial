@@ -204,7 +204,15 @@ You can think of this toolbar as different modes for your mouse cursor. All we w
 
 ![image](https://github.com/user-attachments/assets/32412a47-babc-4638-8d38-d713617972d2)
 
-You can hover your mouse over each brush to see what it does. On this computer I have favorited an airbrush tool, a pen tool, a soft pen tool, a blend tool, and a blur tool. These are all the brushes you will need to fix texture maps. When you have selected ![image](https://github.com/user-attachments/assets/93e25815-cd5f-4a16-b432-8ecf18dac71e) from the toolbar you can click on any of the brush icons to use them. In the provided screenshot I have selected the pen tool. When you select the ![image](https://github.com/user-attachments/assets/4b8de83c-0f16-4800-9922-8e9a8a2e1fd3) from the toolbar you will be able to click any part of the image to copy that color. When you do this and switch back to your brush tool you will be able to draw with that color.
+You can hover your mouse over each brush to see what it does. On this computer I have favorited an airbrush tool, a pen tool, a soft pen tool, a blend tool, and a blur tool. These are all the brushes you will need to fix texture maps. When you have selected ![image](https://github.com/user-attachments/assets/93e25815-cd5f-4a16-b432-8ecf18dac71e) from the toolbar you can click on any of the brush icons to use them. In the provided screenshot I have selected the pen tool. 
+
+At the top of the screen:
+
+![image](https://github.com/user-attachments/assets/ddee2b6f-67bc-4bbd-ba0d-339d29f82764)
+
+You can change the opacity (meaning how "see-through" your brush is) and size of your current brush
+
+When you select the ![image](https://github.com/user-attachments/assets/4b8de83c-0f16-4800-9922-8e9a8a2e1fd3) from the toolbar you will be able to click any part of the image to copy that color. When you do this and switch back to your brush tool you will be able to draw with that color.
 
 Now you need to know how to keep the transparency of the texture map while you are editing it. In the middle right of your screen is your layers panel:
 
