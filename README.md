@@ -7,6 +7,19 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 - Process the Exported Model in Blender
 - Edit the Texture Map in Krita
 
+- [📄 Table of Contents](#-table-of-contents)
+- [🥳 🚀 What's New](#--whats-new-)
+- [📖 Introduction](#-introduction-)
+- [🎁 Major Features](#-major-features-)
+- [🛠️ Installation](#️-installation-)
+- [👀 Model Zoo](#-model-zoo-)
+- [👨‍🏫 Get Started](#-get-started-)
+- [🎫 License](#-license-)
+- [🖊️ Citation](#️-citation-)
+- [🙌 Contributing](#-contributing-)
+- [🤝 Acknowledgement](#-acknowledgement-)
+- [🏗️ Projects in OpenMMLab](#️-projects-in-openmmlab-)
+
 # Information About the Scanner
 * The scanner we use is the Creality Raptor.
 * There are 2 scanning modes: blue laser mode (which uses blue lasers to scan) and infra-red mode (uses infrared camera to scan.) Blue filter mode works with markers and infra-red filter mode works without markers.
