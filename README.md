@@ -1,26 +1,17 @@
 # All About Creality Raptor Scanner
-This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 5 sections:
+This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 3 sections:
 
-- Information About the Scanner
-- Scan an Object
-- Processing the Scan in Creality
-- Process the Exported Model in Blender
-- Edit the Texture Map in Krita
+- [Introduction](#-introduction)
+- [Scanning Process](#-scanning-process)
+   - [Scan an Object](#-scan-an-object)
+   - [Processing the Scan in Creality](#-processing-the-scan-in-creality)
+- [Post-Processing](#-post-procecssing)
+   - [Process the Exported Model in Blender](#-process-the-exported-model-in-blender)
+   - [Edit the Texture Map in Krita](#-edit-the-texture-map-in-krita)
+      -  [Erasing markers from texture maps](#-erasing-markers-from-texture-maps)
+      -  [Fixing "glitchy" tone patterns in texture maps](#-fixing-"glitchy"-tone-patterns-in-texture-maps)
 
-- [📄 Table of Contents](#-table-of-contents)
-- [🥳 🚀 What's New](#--whats-new-)
-- [📖 Introduction](#-introduction-)
-- [🎁 Major Features](#-major-features-)
-- [🛠️ Installation](#️-installation-)
-- [👀 Model Zoo](#-model-zoo-)
-- [👨‍🏫 Get Started](#-get-started-)
-- [🎫 License](#-license-)
-- [🖊️ Citation](#️-citation-)
-- [🙌 Contributing](#-contributing-)
-- [🤝 Acknowledgement](#-acknowledgement-)
-- [🏗️ Projects in OpenMMLab](#️-projects-in-openmmlab-)
-
-# Information About the Scanner
+# Introduction
 * The scanner we use is the Creality Raptor.
 * There are 2 scanning modes: blue laser mode (which uses blue lasers to scan) and infra-red mode (uses infrared camera to scan.) Blue filter mode works with markers and infra-red filter mode works without markers.
 * There are 2 connection configurations: WiFi or wired. They can be seen below. In the WiFi configuration, you connect the scanner to the WiFi handle. The handle will create a closed network for sending data to the creality software as well as power the scanner. For the wired configuration, you connect the scanner to power and use a long USB cable to connect to the computer. ![modes](https://github.com/user-attachments/assets/ec1a4d6c-0b4d-4b07-aad4-e020d38a8b5d)
@@ -33,8 +24,8 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 * You can calibrate the scanner while it is connected in the USB wired configuration.
 * The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram shown during scanning (see picture below.) When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment. ![histogram_flat](https://github.com/user-attachments/assets/0decc243-28f3-4986-92c9-0810220236ed)
 
-
-# Scan an Object
+# Scanning Process
+## Scan an Object
 The purpose of scanning an object is to create a point cloud in the software to be processed. A point cloud is a large collection of XYZ coordinates that represents an object. After you open the creality software, scanning an object is the first step to a fully processed 3D model.
 
 **1.** Open the creality scan software. Connect the scanner to the computer either through WiFi or the USB wire. Once you are connected, this is what you will see:
@@ -62,7 +53,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
    If that was the last scan needed, you now have to process your scan(s) in the creality software.
 
 
-# Processing the Scan in Creality
+## Processing the Scan in Creality
 **1.** Edit the point cloud of your scans.
 
    Now that you have finished scanning, you should be on the process tab. You will see something like this:
@@ -98,7 +89,8 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (usually for removing markers) this can be done in any software that allows for image editing, but this tutorial will use Krita because it is convenient.
 
-# Process the Exported Model in Blender
+# Post Processing
+## Process the Exported Model in Blender
 
 **1.** Bring your model into blender
 * When you open blender, this is what you will see:
@@ -174,7 +166,7 @@ That's it! You have successfully scanned an object and processed it in blender. 
 
   ![image](https://github.com/user-attachments/assets/a35da7b5-ef22-4667-b05b-504a8cd4e5fd)
 
-# Edit the Texture Map in Krita
+## Edit the Texture Map in Krita
 To edit the texture map of a 3D object, you can you use any software that can draw on a .png file. Because it is free and simple I will be using Krita for this tutorial. Below is a piece of a texture map for a traffic barrier:
 
 ![image](https://github.com/user-attachments/assets/9d7a2b7a-ba62-4bb5-adcb-fb385b133f99)
@@ -196,13 +188,13 @@ the blur tool:
 and the eyedropper tool:
 ![image](https://github.com/user-attachments/assets/9902c546-43f5-4845-9d51-2f7b3c39512c)
 
-## Erasing markers from texture maps
+### Erasing markers from texture maps
 
 - Use the eyedropper tool to pick the color you want to replace the marker with
 - Use the pen tool to draw over the marker with the selected color
 - Use the blend tool to blur the edges of the marker covers to make them look natural
 
-## Fixing "glitchy" tone patterns in texture maps
+### Fixing "glitchy" tone patterns in texture maps
 
 The method to fix this depends on the object. Usually, the best way to fix the map is:
 
