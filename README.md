@@ -69,7 +69,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    ![05](https://github.com/user-attachments/assets/56d60de2-6ff6-421b-bbaf-52e2560f2bda)
 
-   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
+   For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding `ctrl` and then drawing around what you want to deselect. Once you have selected the points you want gone, press `DEL`.
 
 **2.** Once you have cleaned up the point clouds, press the magic wand button to optimize your point clouds. The default settings are fine.
 
@@ -83,7 +83,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
    Automatic merging is show below. To merge, select your scans on the left and then press start. Sometimes, it works very well. But if it doesn't, you have to switch to manual merging.
    ![08](https://github.com/user-attachments/assets/d1d3853f-6741-4bd8-98d1-6269da31b6c1)
 
-   Manual merging is shown below. Select one scan for the fixed window and one scan for the float window. Select points on your scan that are the same on both by pressing shift + left click. To deselect a point press ctrl + left click. Once you have at least 3 (though you will usually need more) press start to merge.
+   Manual merging is shown below. Select one scan for the fixed window and one scan for the float window. Select points on your scan that are the same on both by pressing shift + left click. To deselect a point press `ctrl` + `left` click. Once you have at least 3 (though you will usually need more) press start to merge.
    ![manual_merge](https://github.com/user-attachments/assets/54a58aae-4d74-4726-800f-9985cf21ef48)
 
 **4.** Once you have a single point cloud that represents your object, hit the mesh button (under the merge button.) This converts your point cloud to a mesh. A mesh is a collection of vertices, edges, and faces to define the shape of an object. This is the usual form of 3D objects on a computer. Usually, checking the hole filling option is ok but the "closure" option may cause issues. Closure will ensure that the entire mesh is "sealed." It is usually too aggressive and will incorrectly combine areas of the object.
@@ -138,7 +138,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
   ![image](https://github.com/user-attachments/assets/b99dfb99-c086-4c93-bfb8-b37022a39af3)
 
-- Once you have adjusted the scale, position, and rotation of your object click on the object and press CTRL+A.
+- Once you have adjusted the scale, position, and rotation of your object click on the object and press `ctrl`+`A`.
 - Click `All Transform`.
 
 **3.** Export your blender model
@@ -161,15 +161,15 @@ The purpose of scanning an object is to create a point cloud in the software to 
 **5.** Re-assign texture map to .obj file
 - A 3D model should be in a folder containing 3 files of the same name: a .obj file, a .png file, and a .mtl file. The .obj file is your 3D model. The .png file is your texture map. The .mtl file links the texture map to the 3D object. When we modified the object in blender, it still is set to use the texture map of the unmodified object. So, we are going to copy the texture map and change the .mtl file to tell it to use the copy. This way we can have 3 files for one object all with the same name, for organization purposes.
 - Open file explorer and go to the folder that contains your model
-- Click on the .png file and press CTRL+C
-- While in the same folder, press CTRL+V
-- Rename the copied .png file to have the same name as your modified object
-- Open the .mtl file in notepad, it will look like this:
+- Click on the .png file and press `ctrl`+`C`.
+- While in the same folder, press `ctrl`+`V`.
+- Rename the copied `.png` file to have the same name as your modified object
+- Open the `.mtl` file in notepad, it will look like this:
  
   ![image](https://github.com/user-attachments/assets/eb623c25-ad15-48ad-98c0-86490872acff)
 
 - While being careful not to change anything else, change the circled part to the name of your new texture map
-- Press CTRL+S to save your changes
+- Press `ctrl`+`S` to save your changes
 
 That's it! You have successfully scanned an object and processed it in blender. If the texture map of your object needs to be edited, you can do so by following the next section of the tutorial. If you'd like to make sure your texture map is correct, you can press this button while viewing your object in blender to show it with the texture map.
 
