@@ -80,7 +80,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    ![07](https://github.com/user-attachments/assets/f55a6469-a243-4b1e-b46c-bf772463a50b)
 
-   Automatic merging is show below. To merge, select your scans on the left and then press start. Sometimes, it works very well. But if it doesn't, you have to switch to manual merging.
+   Automatic merging is shown below. To merge, select your scans on the left and then press start. Sometimes, it works very well. But if it doesn't, you have to switch to manual merging.
    ![08](https://github.com/user-attachments/assets/d1d3853f-6741-4bd8-98d1-6269da31b6c1)
 
    Manual merging is shown below. Select one scan for the fixed window and one scan for the float window. Select points on your scan that are the same on both by pressing shift + left click. To deselect a point press `ctrl` + `left` click. Once you have at least 3 (though you will usually need more) press start to merge.
@@ -114,7 +114,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 **2.** Arrange and size your model in the xyz space
 - Because the model will be used in other programs, it needs to be aligned correctly in 3D space. We want the object to be centered at the origin and be positioned "straight" with respect to the x, y, and z axes. Also, when you scan the object in creality, it scales the model up by a large amount. So, the computer thinks the object is much larger than it is in real life. We have to scale the object down to fix this.
 - Use the scroll wheel on your mouse to zoom out and find the object you imported.
-- First, rescale the object; you should see a panel like the one shown below toward the bottom left of your screen.
+- First, rescale the object; you should see a panel like the one shown below toward the bottom right of your screen.
 
   ![image](https://github.com/user-attachments/assets/e2885e50-50d6-4d40-b176-959e83a8e55d)
 
