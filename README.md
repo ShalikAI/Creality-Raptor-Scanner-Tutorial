@@ -1,15 +1,11 @@
 # All About Creality Raptor Scanner
-This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 4 sections:
+This is a tutorial repository for the creality raptor 3D scanner. This repository will explain how to set up the scanner, scan an object, and process its 3D model in other software. There are 5 sections:
 
-1. Information About the Scanner
-
-2. Scan an Object
-   
-4. Processing the Scan in Creality
-
-5. Process the Exported Model in Blender
-
-6. Edit the Texture Map in Krita
+- Information About the Scanner
+- Scan an Object
+- Processing the Scan in Creality
+- Process the Exported Model in Blender
+- Edit the Texture Map in Krita
 
 # Information About the Scanner
 * The scanner we use is the Creality Raptor.
