@@ -9,7 +9,7 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
    - [Process the Exported Model in Blender](#process-the-exported-model-in-blender)
    - [Edit the Texture Map in Krita](#edit-the-texture-map-in-krita)
       -  [Erasing markers from texture maps](#erasing-markers-from-texture-maps)
-      -  [Fixing "glitchy" tone patterns in texture maps](#fixing-"glitchy"-tone-patterns-in-texture-maps)
+      -  [Fixing "glitchy" tone patterns in texture maps](#fixing-glitchy-tone-patterns-in-texture-maps)
 
 # Introduction
 * The scanner we use is the Creality Raptor.
