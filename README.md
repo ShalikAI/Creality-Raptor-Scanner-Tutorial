@@ -12,23 +12,26 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
       -  [Fixing "glitchy" tone patterns in texture maps](#fixing-glitchy-tone-patterns-in-texture-maps)
 
 # Introduction
-* The scanner we use is the Creality Raptor.
-* There are 2 scanning modes:
-   * blue laser mode (which uses blue lasers to scan) and
-   * infra-red mode (uses infrared camera to scan.)
+- The scanner we use is the Creality Raptor.
+- There are 2 scanning modes:
+   - blue laser mode (which uses blue lasers to scan)
+   - infra-red mode (uses infrared camera to scan.)
+
 Blue filter mode works with markers and infra-red filter mode works without markers.
-* There are 2 connection configurations:
-   * WiFi
-   * Wired.
+
+- There are 2 connection configurations:
+   - WiFi
+   - Wired
+  
 They can be seen below. In the WiFi configuration, you connect the scanner to the WiFi handle. The handle will create a closed network for sending data to the creality software as well as power the scanner. For the wired configuration, you connect the scanner to power and use a long USB cable to connect to the computer. ![modes](https://github.com/user-attachments/assets/ec1a4d6c-0b4d-4b07-aad4-e020d38a8b5d)
 
 
-* When the WiFi handle mode is used, you can place a phone on top of the scanner so that you can better see what the computer sees when you scan. To do this, while on the scanning screen press the button shown below circled in red and follow the instructions. ![phone_scan_mode](https://github.com/user-attachments/assets/c470e7af-465d-40c2-9d85-082467e34e8d)
+- When the WiFi handle mode is used, you can place a phone on top of the scanner so that you can better see what the computer sees when you scan. To do this, while on the scanning screen press the button shown below circled in red and follow the instructions. ![phone_scan_mode](https://github.com/user-attachments/assets/c470e7af-465d-40c2-9d85-082467e34e8d)
 
 
 
-* You can calibrate the scanner while it is connected in the USB wired configuration.
-* The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram shown during scanning (see picture below.) When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment. ![histogram_flat](https://github.com/user-attachments/assets/0decc243-28f3-4986-92c9-0810220236ed)
+- You can calibrate the scanner while it is connected in the USB wired configuration.
+- The ▷| button on the scanner has an LED ring aroung it, this is a representation of the histogram shown during scanning (see picture below.) When it is blue, you are too far from the object for it to scan properly. When it is green, you are just right. When it is red, you are too close. When it flashes, it has lost track of its location, and you need to hold it still in a familiar area for a moment. ![histogram_flat](https://github.com/user-attachments/assets/0decc243-28f3-4986-92c9-0810220236ed)
 
 # Scanning Process
 ## Scan an Object
@@ -44,11 +47,11 @@ The purpose of scanning an object is to create a point cloud in the software to 
 **4.** Press the "Scan" button at the bottom to start.
 
 ### Scanning tips
-* Ensure that the object is in a stable position- if the object moves while you're scanning, you have to end the scan immediately and take a new one or else it will mess up the data.
-* Provide sufficient lighting.
-* Take as few scans as possible to avoid the model appearing bumpy or having a strange texture map. You want to avoid scanning the same area in a new take as much as you can, but still get a little bit of common area for the purpose of merging.
-* You can pause or resume the scan at any time by pressing the pause/play button in the software, on your phone, on the scanner, or on the wifi handle.
-* In the software the green areas are where the scanner was able to get a lot of information, the red areas are where it has not enough information about the object. You want as much green as possible.
+- Ensure that the object is in a stable position- if the object moves while you're scanning, you have to end the scan immediately and take a new one or else it will mess up the data.
+- Provide sufficient lighting.
+- Take as few scans as possible to avoid the model appearing bumpy or having a strange texture map. You want to avoid scanning the same area in a new take as much as you can, but still get a little bit of common area for the purpose of merging.
+- You can pause or resume the scan at any time by pressing the pause/play button in the software, on your phone, on the scanner, or on the wifi handle.
+- In the software the green areas are where the scanner was able to get a lot of information, the red areas are where it has not enough information about the object. You want as much green as possible.
 
 **5.** When you have scanned the areas needed and you have a nice green representation of it in the software, press the red square button to end the scan.
 
@@ -99,74 +102,74 @@ The purpose of scanning an object is to create a point cloud in the software to 
 ## Process the Exported Model in Blender
 
 **1.** Bring your model into blender
-* When you open blender, this is what you will see:
+- When you open blender, this is what you will see:
 
   ![image](https://github.com/user-attachments/assets/6dd0a23a-dff2-4a19-8e3f-966a31c4f1e9)
 
-* Click on the cube and press the delete key.
-* Go to File > Import > Wavefront (.obj)
-* Select the folder containing the scan of your object from creality.
-* Select the .obj file inside the folder. Press "Import Wavefront OBJ"
+- Click on the cube and press the delete key.
+- Go to File > Import > Wavefront (.obj)
+- Select the folder containing the scan of your object from creality.
+- Select the .obj file inside the folder. Press "Import Wavefront OBJ"
 
 **2.** Arrange and size your model in the xyz space
-* Because the model will be used in other programs, it needs to be aligned correctly in 3D space. We want the object to be centered at the origin and be positioned "straight" with respect to the x, y, and z axes. Also, when you scan the object in creality, it scales the model up by a large amount. So, the computer thinks the object is much larger than it is in real life. We have to scale the object down to fix this.
-* Use the scroll wheel on your mouse to zoom out and find the object you imported.
-* First, rescale the object; you should see a panel like the one shown below toward the bottom left of your screen.
+- Because the model will be used in other programs, it needs to be aligned correctly in 3D space. We want the object to be centered at the origin and be positioned "straight" with respect to the x, y, and z axes. Also, when you scan the object in creality, it scales the model up by a large amount. So, the computer thinks the object is much larger than it is in real life. We have to scale the object down to fix this.
+- Use the scroll wheel on your mouse to zoom out and find the object you imported.
+- First, rescale the object; you should see a panel like the one shown below toward the bottom left of your screen.
 
   ![image](https://github.com/user-attachments/assets/e2885e50-50d6-4d40-b176-959e83a8e55d)
 
-* Set the Scale X, Y, and Z to be 0.001
-* Now we will move the object. Right click the object and go to Set Origin > Geometry to Origin.
-* Shown below is a 3D model of a drill which I will be using as an example. Your screen should look something like this once you follow the steps above.
+- Set the Scale X, Y, and Z to be 0.001
+- Now we will move the object. Right click the object and go to Set Origin > Geometry to Origin.
+- Shown below is a 3D model of a drill which I will be using as an example. Your screen should look something like this once you follow the steps above.
 
   ![image](https://github.com/user-attachments/assets/560a9744-4411-479b-b3da-367ca6b575e7)
 
 
-* Press in on the scroll wheel to rotate your view. Press shift and in on the scroll wheel to pan your view.
-* Press either x, y, or z on the axes map (shown below) to snap your view to the axis.
+- Press in on the scroll wheel to rotate your view. Press shift and in on the scroll wheel to pan your view.
+- Press either x, y, or z on the axes map (shown below) to snap your view to the axis.
 
   ![image](https://github.com/user-attachments/assets/26a03e55-8075-413e-b18b-4e322de108e2)
 
-* I chose the x axis first for this example. Here is how it looks:
+- I chose the x axis first for this example. Here is how it looks:
   
   ![image](https://github.com/user-attachments/assets/67f1a632-b974-47c4-9ff8-f3ad1716a91f)
 
-* To center your model, you will need to go to each axis, rotate it, and move it until by your judgement it is centered. To rotate the model around an axis: press R, move your mouse, and left click when the object is at the desired angle. To move the model around an axis: press G, move your mouse, and left click when the object is at the desired position. Generally, you want the +Z direction to be up and -Z to be down. Here is my centered drill, for reference:
+- To center your model, you will need to go to each axis, rotate it, and move it until by your judgement it is centered. To rotate the model around an axis: press R, move your mouse, and left click when the object is at the desired angle. To move the model around an axis: press G, move your mouse, and left click when the object is at the desired position. Generally, you want the +Z direction to be up and -Z to be down. Here is my centered drill, for reference:
 
   ![image](https://github.com/user-attachments/assets/b99dfb99-c086-4c93-bfb8-b37022a39af3)
 
-* Once you have adjusted the scale, position, and rotation of your object click on the object and press CTRL+A.
-* Click "All Transforms"
+- Once you have adjusted the scale, position, and rotation of your object click on the object and press CTRL+A.
+- Click `All Transform`.
 
 **3.** Export your blender model
-* Go to File > Export > Wavefront (.obj)
-* Navigate to the folder where your original object was stored
-* Add _modified to the end of the file name and press Export as .obj
+- Go to File > Export > Wavefront (.obj)
+- Navigate to the folder where your original object was stored
+- Add _modified to the end of the file name and press Export as .obj
 
 **4.** Ensure file size is < 10 MB
-* Open file explorer and go to the folder where you exported your model
-* Look at the file size of your modified .obj, is it less than 10 MB (or 10,000 kB ?)
-* If yes, skip to step 6.
-* If it is greater than 10,000 kB, go back into blender and look at your object. In the panel where you resized the object, click the wrench icon. Click add modifier.
+- Open file explorer and go to the folder where you exported your model
+- Look at the file size of your modified .obj, is it less than 10 MB (or 10,000 kB ?)
+- If yes, skip to step 6.
+- If it is greater than 10,000 kB, go back into blender and look at your object. In the panel where you resized the object, click the wrench icon. Click add modifier.
   
   ![image](https://github.com/user-attachments/assets/ade7f81a-3d0d-49e7-a4d4-e87450d97057)
 
-* Go to Generate > Decimate
-* Change the ratio to make the file size under 10 MB. For example, if your file is 100 MB, you will change the ratio to 0.1.
-* Export the file again, overwrite your previous "_modified" .obj file.
+- Go to Generate > Decimate
+- Change the ratio to make the file size under 10 MB. For example, if your file is 100 MB, you will change the ratio to 0.1.
+- Export the file again, overwrite your previous "_modified" .obj file.
 
 **5.** Re-assign texture map to .obj file
-* A 3D model should be in a folder containing 3 files of the same name: a .obj file, a .png file, and a .mtl file. The .obj file is your 3D model. The .png file is your texture map. The .mtl file links the texture map to the 3D object. When we modified the object in blender, it still is set to use the texture map of the unmodified object. So, we are going to copy the texture map and change the .mtl file to tell it to use the copy. This way we can have 3 files for one object all with the same name, for organization purposes.
-* Open file explorer and go to the folder that contains your model
-* Click on the .png file and press CTRL+C
-* While in the same folder, press CTRL+V
-* Rename the copied .png file to have the same name as your modified object
-* Open the .mtl file in notepad, it will look like this:
+- A 3D model should be in a folder containing 3 files of the same name: a .obj file, a .png file, and a .mtl file. The .obj file is your 3D model. The .png file is your texture map. The .mtl file links the texture map to the 3D object. When we modified the object in blender, it still is set to use the texture map of the unmodified object. So, we are going to copy the texture map and change the .mtl file to tell it to use the copy. This way we can have 3 files for one object all with the same name, for organization purposes.
+- Open file explorer and go to the folder that contains your model
+- Click on the .png file and press CTRL+C
+- While in the same folder, press CTRL+V
+- Rename the copied .png file to have the same name as your modified object
+- Open the .mtl file in notepad, it will look like this:
  
   ![image](https://github.com/user-attachments/assets/eb623c25-ad15-48ad-98c0-86490872acff)
 
-* While being careful not to change anything else, change the circled part to the name of your new texture map
-* Press CTRL+S to save your changes
+- While being careful not to change anything else, change the circled part to the name of your new texture map
+- Press CTRL+S to save your changes
 
 That's it! You have successfully scanned an object and processed it in blender. If the texture map of your object needs to be edited, you can do so by following the next section of the tutorial. If you'd like to make sure your texture map is correct, you can press this button while viewing your object in blender to show it with the texture map.
 
