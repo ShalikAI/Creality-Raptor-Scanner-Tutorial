@@ -187,23 +187,19 @@ the blur tool:
 and the eyedropper tool:
 ![image](https://github.com/user-attachments/assets/9902c546-43f5-4845-9d51-2f7b3c39512c)
 
-**Erasing markers from texture maps**
+## Erasing markers from texture maps
 
-**1.** Use the eyedropper tool to pick the color you want to replace the marker with
+- Use the eyedropper tool to pick the color you want to replace the marker with
+- Use the pen tool to draw over the marker with the selected color
+- Use the blend tool to blur the edges of the marker covers to make them look natural
 
-**2.** Use the pen tool to draw over the marker with the selected color
-
-**3.** Use the blend tool to blur the edges of the marker covers to make them look natural
-
-**Fixing "glitchy" tone patterns in texture maps**
+## Fixing "glitchy" tone patterns in texture maps
 
 The method to fix this depends on the object. Usually, the best way to fix the map is:
 
-**1.** Use the eyedropper tool to pick the color you want the incorrect area to be
-
-**2.** Cover the incorrectly colored area with the pen tool
-
-**3.** Blur the area to look natural with the areas next to it
+- Use the eyedropper tool to pick the color you want the incorrect area to be
+- Cover the incorrectly colored area with the pen tool
+- Blur the area to look natural with the areas next to it
 
 Sometimes, you can also use the filters in Krita to fix incorrect tones. You can filter an image in Krita by pressing ![image](https://github.com/user-attachments/assets/c901f322-8575-4c6b-a6ec-4e16a0e4abfe) the following link provides documentation on how to use every filter from the official Krita manual.
 https://docs.krita.org/en/reference_manual/filters/adjust.html
