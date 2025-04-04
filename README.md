@@ -4,10 +4,12 @@ This is a tutorial repository for the creality raptor 3D scanner. This repositor
 1. Information About the Scanner
 
 2. Scan an Object
+   
+4. Processing the Scan in Creality
 
-3. Process the Exported Model in Blender
+5. Process the Exported Model in Blender
 
-4. Edit the Texture Map in Krita
+6. Edit the Texture Map in Krita
 
 # Information About the Scanner
 * The scanner we use is the Creality Raptor.
@@ -51,7 +53,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
    If that was the last scan needed, you now have to process your scan(s) in the creality software.
 
 
-# Processing your scan in creality
+# Processing the Scan in Creality
 **1.** Edit the point cloud of your scans.
 
    Now that you have finished scanning, you should be on the process tab. You will see something like this:
