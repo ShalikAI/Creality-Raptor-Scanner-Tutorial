@@ -46,7 +46,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    If you would like to take another scan, hit the + button near the top left of the screen (shown below.)
    
-    ![image](https://github.com/user-attachments/assets/16ae6941-edb4-4d2c-9d17-046d369ed91e)
+   ![image](https://github.com/user-attachments/assets/16ae6941-edb4-4d2c-9d17-046d369ed91e)
 
    If that was the last scan needed, you now have to process your scan(s) in the creality software.
 
@@ -56,7 +56,7 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    Now that you have finished scanning, you should be on the process tab. You will see something like this:
 
-    ![05](https://github.com/user-attachments/assets/56d60de2-6ff6-421b-bbaf-52e2560f2bda)
+   ![05](https://github.com/user-attachments/assets/56d60de2-6ff6-421b-bbaf-52e2560f2bda)
 
    For whatever reason, your scan may grab extra points for the point cloud that are not an accurate representation of the object you're trying to scan. Because of this you will usually have to delete the table from under the object. Rotate your point cloud by left clicking and dragging the mouse. Move your point cloud by right clicking and dragging. Select points by holding shift and left clicking, then draw around the area you want to select. If you've accidentally selected too much, you can de-select by holding CTRL and then drawing around what you want to deselect. Once you have selected the points you want gone, press DEL.
 
