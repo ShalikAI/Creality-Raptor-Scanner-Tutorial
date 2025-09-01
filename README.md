@@ -100,6 +100,13 @@ The purpose of scanning an object is to create a point cloud in the software to 
 
    Every scan will be edited in blender so that we can arrange the mesh, make it into a smaller file, and if needed edit the mesh's geometry. If you need to edit the texture map (usually for removing markers) this can be done in any software that allows for image editing, but this tutorial will use Krita because it is convenient.
 
+# Troubleshooting
+## Projects
+All the project files for the creality scanner saves to `local disk` --> `program files` --> `creality scan` --> `projects` --> `.obp` file. You can load those scan files from there as projects or delete them if needed.
+
+## Scanner lights
+The scanner blue light may not turn on with long press which indicates the WiFi is not on. In order to turn that on, do quick push/short push to the button. Don't push and hold for sometime.
+
 # Post Processing
 ## Process the Exported Model in Blender
 
