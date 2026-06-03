@@ -207,19 +207,19 @@ That's it! You have successfully scanned an object and processed it in blender. 
   ![image](https://github.com/user-attachments/assets/a35da7b5-ef22-4667-b05b-504a8cd4e5fd)
 
 ## Edit the Texture Map in Krita
-To edit the texture map of a 3D object, you can you use any software that can draw on a .png file. Because it is free and simple I will be using Krita for this tutorial. Below is a piece of a texture map for a traffic barrier:
+To edit the texture map of a 3D object, you can you use any software that can draw on a .png file. Because it is free and simple I will be using Krita for this tutorial. Below is a piece of a texture map for a traffic barrier which is covered in markers that need to be removed:
 
 <div align="center">
   <img src="media/traffic.png" width="800">
 </div>
 
-As you can see it is covered in markers which need to be removed. Here is another texture map for a metallic object:
+Here is another texture map for a metallic object which has been partially edited but the issue with this map is the yellowey tones:
 
 <div align="center">
   <img src="media/metalic.png" width="800">
 </div>
 
-It has been partially edited, but as you can see the issue with this map is the yellowey tones. Because this is a metallic silver object, we need to remove the yellow spots. The creality raptor is not as good at getting texture maps as it is with getting dimensions. So, this yellowy pattern will likely show up on every metallic object. This could be because of the scanner or because of the way the creality software creates texture maps. So, let's start fixing these in Krita.
+As this is a metallic silver object, we need to remove the yellow spots. The creality raptor is not as good at getting texture maps as it is with getting dimensions. So, this yellowy pattern will likely show up on every metallic object. This could be because of the scanner or because of the way the creality software creates texture maps. So, let's start fixing these in Krita.
 
 When you open Krita, this is what you will see:
 ![image](https://github.com/user-attachments/assets/bd50db96-bd94-453a-a739-072ebb37d29a)
