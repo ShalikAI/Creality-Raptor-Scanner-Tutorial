@@ -188,9 +188,17 @@ That's it! You have successfully scanned an object and processed it in blender. 
 ## Edit the Texture Map in Krita
 To edit the texture map of a 3D object, you can you use any software that can draw on a .png file. Because it is free and simple I will be using Krita for this tutorial. Below is a piece of a texture map for a traffic barrier:
 
+<div align="center">
+  <img src="media/traffic.png" width="600">
+</div>
+
 ![image](https://github.com/user-attachments/assets/9d7a2b7a-ba62-4bb5-adcb-fb385b133f99)
 
 As you can see it is covered in markers which need to be removed. Here is another texture map for a metallic object:
+
+<div align="center">
+  <img src="media/metalic.png" width="600">
+</div>
 
 ![image](https://github.com/user-attachments/assets/e3f93f42-2a89-4f5d-a8b9-181e9e08e76c)
 
